@@ -1,0 +1,75 @@
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+//  import
+
+@import 'common.scss';
+@import 'formula.scss';
+@import 'keyframe.scss';
+@import 'model.scss';
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+//  basic
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: $color-font;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    outline: none;
+    border-top: 0.5px solid #CCCCCC;
+    padding: 0 $std-padding !important;
+    margin: $std-margin 0 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    @include flex( column, nowrap, flex-start );
+    @include theme();
+
+    /*   *   *   *   *   *   *   *   *   *   */
+
+    font-family: 'Lato', sans-serif;
+    font-size: medium;
+    font-weight: 300;
+
+    text-align: justify;
+    text-decoration: none;
+    text-transform: none;
+
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#root {
+
+    @include flex( column, nowrap, flex-start, flex-start, flex-start );
+    @include theme();
+
+    /*   *   *   *   *   *   *   *   *   *   */
+    
+    overflow-x: hidden;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+//  core
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+//  component
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+//  layout

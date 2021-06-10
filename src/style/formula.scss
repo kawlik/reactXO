@@ -1,0 +1,51 @@
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@mixin animation( $duration: $std-time, $timing: linear, $delay: 0, $direction: forwards, $iteration: 1, $fill: both ) {
+    animation-duration: $duration;
+    animation-timing-function: $timing;
+    animation-delay: $delay;
+
+    animation-direction: $direction;
+    animation-iteration-count: $iteration;
+    animation-fill-mode: $fill;
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@mixin border( $thick: $std-thick, $type: solid, $color: $color-light, $radius: $std-radius ) {
+    border: $thick $type $color;
+    border-radius: $radius;
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@mixin flex( $direction: column, $wrap: nowrap, $justify: space-around, $content: center, $items: center ) {
+
+    display: flex;
+    
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+
+    justify-content: $justify;
+    align-content: $content;
+    align-items: $items;
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@mixin theme( $background: $color-background, $font: $color-font ) {
+
+    background-color: $background;
+    color: $font;
+
+    &.__theme-dark {
+        background-color: invert( $background );
+        color: invert( $font );
+    }
+}
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+
+@mixin transition( $type: ease-in-out, $time: $std-time ) {
+    transition: all $type, $time;
+}

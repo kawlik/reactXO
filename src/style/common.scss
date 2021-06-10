@@ -1,0 +1,62 @@
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+//  variables light
+
+$color-background: #FFFFFF;
+$color-light: #F5F5F5;
+$color-font: #343434;
+
+$color-primary: #FF3300;
+$color-secondary: #7A7A7A;
+$color-third: #343839;
+
+$color-subtle: #66DDDD;
+$color-distinctive: #4488FF;
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+//  variables dark
+
+$dark-color-background: invert( $color-background );
+$dark-color-light: invert( $color-light );
+$dark-color-font: invert( $color-font );
+
+$dark-color-primary: invert( $color-primary );
+$dark-color-secondary: invert( $color-secondary );
+$dark-color-third: invert( $color-third );
+
+$dark-color-subtle: invert( $color-subtle );
+$dark-color-distinctive: invert( $color-distinctive );
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+//  variables standard
+
+$std-gap: 10px;
+$std-margin: 15px;
+$std-padding: 10px;
+$std-radius: 5px;
+$std-thick: 1px;
+$std-time: 0.2s;
+
+/*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
+//  breakpoints proposal
+
+@media ( max-width: 767px ) {
+
+}
+
+/*   *   *   *   *   *   *   *   *   *   */
+
+@media ( min-width: 768px ) and ( max-width: 1199px ) {
+
+}
+
+/*   *   *   *   *   *   *   *   *   *   */
+
+@media ( min-width: 1200px ) and ( max-width: 1399px ) {
+
+}
+
+/*   *   *   *   *   *   *   *   *   *   */
+
+@media (min-width: 1400px) {
+
+}
