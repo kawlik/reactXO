@@ -1,0 +1,18 @@
+.range {
+
+    /*   *   *   *   *   *   *   *   *   *   */
+
+    @include flex( column, nowrap );
+    @include transition();
+
+    /*   *   *   *   *   *   *   *   *   *   */
+
+    padding: 15px;
+    gap: 15px;
+
+    /*   *   *   *   *   *   *   *   *   *   */
+    .range-value {
+
+        font-size: xx-large;
+    }
+}

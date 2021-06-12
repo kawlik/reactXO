@@ -54,7 +54,7 @@ body {
 
 #root {
 
-    @include flex( column, nowrap, flex-start, flex-start, flex-start );
+    @include flex( column, nowrap, space-around, center, center );
     @include theme();
 
     /*   *   *   *   *   *   *   *   *   *   */
@@ -70,6 +70,10 @@ body {
 
 /*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
 //  component
+
+@import 'component/board.scss';
+
+@import 'component/range.scss';
 
 /*   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   *   */
 //  layout

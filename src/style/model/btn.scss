@@ -1,0 +1,25 @@
+.btn {
+    
+    @include theme( $color-font, $color-background );
+    @include transition();
+    @include border();
+
+    /*   *   *   *   *   *   *   *   *   *   */
+
+    padding: 10px 20px;
+    font-size: larger;
+    font-weight: 300;
+
+    letter-spacing: 1px;
+    outline: none;
+
+    /*   *   *   *   *   *   *   *   *   *   */
+
+    &:hover {
+
+        cursor: pointer;
+        opacity: 0.9;
+
+        transform: scale( 1.1 );
+    }
+}
